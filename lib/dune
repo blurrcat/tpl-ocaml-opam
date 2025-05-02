@@ -1,0 +1,8 @@
+(include_subdirs qualified)
+
+(library
+ (name lib)
+ (libraries containers ppx_expect)
+ (inline_tests)
+ (preprocess
+  (pps ppx_expect ppx_deriving.show)))
