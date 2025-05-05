@@ -28,7 +28,6 @@
    (ppx_expect (>= "v0.17"))
 
    ; devtools
-
    (patdiff :with-dev-setup)
    (utop :with-dev-setup)
    (odoc :with-dev-setup)
