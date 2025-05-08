@@ -32,7 +32,7 @@ bootstrap: init-switch deps git-hooks
 
 $(opam_file): dune-project
 	dune pkg lock
-	dune build @pkg-install		
+	opam install . --yes --deps-only --with-test --with-doc --with-dev-setup
 
 
 .git/hooks/pre-commit:
